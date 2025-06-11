@@ -56,17 +56,13 @@ function createTable(data) {
   }
 
   const table = document.createElement("table");
-  const maddeGroups = groupByArticle(data);
   let tbodyHTML = "";
 
-  for (const madde in maddeGroups) {
-    const group = maddeGroups[madde];
-    group.forEach((item, index) => {
-      tbodyHTML += `<tr>`;
-      if (index === 0) {
-        tbodyHTML += `<td rowspan="${group.length}" class="merged-madde">${item.madde}</td>`;
-      }
-      tbodyHTML += `
+  //   Sorting olanda maddeleri merge etmirik
+  if (currentBalSortOrder !== "none" || currentPenaltySortOrder !== "none") {
+    data.forEach((item) => {
+      tbodyHTML += `<tr>
+        <td>${item.madde}</td>
         <td>${item.alt_madde}</td>
         <td>${item.ad}</td>
         <td class="points">${item.bal || "-"}</td>
@@ -75,6 +71,26 @@ function createTable(data) {
         <td>${item.əlavə || "-"}</td>
         </tr>`;
     });
+  } else {
+    const maddeGroups = groupByArticle(data);
+
+    for (const madde in maddeGroups) {
+      const group = maddeGroups[madde];
+      group.forEach((item, index) => {
+        tbodyHTML += `<tr>`;
+        if (index === 0) {
+          tbodyHTML += `<td rowspan="${group.length}" class="merged-madde">${item.madde}</td>`;
+        }
+        tbodyHTML += `
+          <td>${item.alt_madde}</td>
+          <td>${item.ad}</td>
+          <td class="points">${item.bal || "-"}</td>
+          <td class="penaltys">${item.cerime}</td>
+          <td>${item.inzibati_həbs || "-"}</td>
+          <td>${item.əlavə || "-"}</td>
+          </tr>`;
+      });
+    }
   }
 
   // Sort ediləndə bal və cərimə sütunlarının simvollarını sort növünə görə dəyişirik

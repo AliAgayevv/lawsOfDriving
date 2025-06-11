@@ -52,5 +52,50 @@
     "cerime": "₼300.00",
     "inzibati_həbs": "",
     "əlavə": "və ya NV-ni idarəetmə hüququ 1 il müddətinə məhdudlaşdırılır"
+  },
+  {
+    "madde": "327",
+    "alt_madde": "327.6",
+    "ad": "Yol hərəkəti nişanlarının və ya yolun hərəkət hissəsinin işarələrinin bilərəkdən pozulması və ya sökülməsi.",
+    "bal": "3 bal",
+    "cerime": "₼150.00",
+    "inzibati_həbs": "",
+    "əlavə": ""
+  },
+  {
+    "madde": "328",
+    "alt_madde": "328.1",
+    "ad": "NV-ni idarə etmək hüququ olmadan idarə etmə.",
+    "bal": "5 bal",
+    "cerime": "₼200.00",
+    "inzibati_həbs": "15 günə qədər",
+    "əlavə": "NV müsadirə oluna bilər"
+  },
+  {
+    "madde": "328",
+    "alt_madde": "328.2",
+    "ad": "Sürücülük vəsiqəsi olmayan şəxsin NV-ni idarə etməyə buraxılması.",
+    "bal": "4 bal",
+    "cerime": "₼150.00",
+    "inzibati_həbs": "",
+    "əlavə": "Təkrar hal olduqda məsuliyyət artır"
+  },
+  {
+    "madde": "329",
+    "alt_madde": "329.1",
+    "ad": "Alkoqollu, narkotik və ya psixotrop maddələrin təsiri altında NV idarə edilməsi.",
+    "bal": "10 bal",
+    "cerime": "₼400.00",
+    "inzibati_həbs": "15-30 gün",
+    "əlavə": "NV idarəetmə hüququ 1-2 il müddətinə məhdudlaşdırılır"
+  },
+  {
+    "madde": "329",
+    "alt_madde": "329.2",
+    "ad": "Sürücünün tibbi müayinədən yayınması.",
+    "bal": "8 bal",
+    "cerime": "₼300.00",
+    "inzibati_həbs": "15 günə qədər",
+    "əlavə": "NV idarəetmə hüququ 1 il müddətinə məhdudlaşdırılır"
   }
 ]
