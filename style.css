@@ -90,6 +90,9 @@ tbody tr:hover {
   justify-content: center;
   margin-top: 2rem;
   gap: 15px;
+  position: absolute;
+  top: 0;
+  left: 1/2;
 }
 
 .toggleButtons button {
@@ -130,34 +133,10 @@ tbody tr:hover {
     font-size: 0.85rem;
   }
 
-  .toggleButtons {
-    flex-direction: column;
-    align-items: center;
-    position: static;
-    margin-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .toggleButtons button {
+    padding: 5px 10px;
+    font-size: 12px;
     width: 80%;
     max-width: 300px;
-  }
-
-  @media (width < 40rem) {
-    .toggleButtons {
-      display: flex;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      background-color: rgba(248, 249, 250, 0.95);
-      padding: 10px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 0;
-    }
   }
 }
