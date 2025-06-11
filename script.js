@@ -242,3 +242,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.getElementById("togglePoint").addEventListener("click", function () {
+  togglePoint();
+});
+
+document
+  .getElementById("togglePenalties")
+  .addEventListener("click", function () {
+    togglePenalty();
+  });

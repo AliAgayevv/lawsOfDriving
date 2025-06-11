@@ -1,40 +1,163 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
 }
+
 th,
 td {
-  border: 1px solid #333;
-  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  padding: 12px 15px;
   text-align: left;
+  vertical-align: middle;
 }
+
+th {
+  background-color: #e9ecef;
+  color: #495057;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e2f0ff;
+  cursor: default;
+}
+
 .merged-madde {
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
-  font-size: 1.2em;
-  background-color: #f0f0f0;
+  font-size: 1.1em;
+  background-color: #cfe2ff;
+  color: #004085;
 }
-#table-point {
+
+#table-point,
+#table-penalty {
   cursor: pointer;
-  background-color: #ddd;
+  background-color: #d1ecf1;
+  color: #0c5460;
   user-select: none;
+  transition: background-color 0.3s ease;
 }
+
+#table-point:hover,
+#table-penalty:hover {
+  background-color: #bee5eb;
+}
+
 #hidden-bal-row td {
   background-color: #ffeeba;
   font-weight: bold;
   text-align: center;
 }
 
-#table-penalty {
-  cursor: pointer;
-  background-color: #bbd;
+.hidden {
+  visibility: hidden;
+
   user-select: none;
 }
 
-/* bal hücreleri için gizleme sınıfı */
-.hidden {
-  visibility: hidden;
-  user-select: none;
+.toggleButtons {
+  display: none;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 15px;
+}
+
+.toggleButtons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toggleButtons button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toggleButtons button:active {
+  scale: 0.95;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .toggleButtons {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .toggleButtons button {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  @media (width < 40rem) {
+    .toggleButtons {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: rgba(248, 249, 250, 0.95);
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 0;
+    }
+  }
 }
