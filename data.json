@@ -1,0 +1,56 @@
+[
+  {
+    "madde": "327",
+    "alt_madde": "327.1",
+    "ad": "Yol nişanlarının və ya yolların hərəkət hissələrinin işarələrinin tələblərinin pozulması.",
+    "bal": "",
+    "cerime": "₼40.00",
+    "inzibati_həbs": "",
+    "əlavə": ""
+  },
+  {
+    "madde": "327",
+    "alt_madde": "327.1.1",
+    "ad": "YHQ AR Qanununda icazə verilən hallar istisna olmaqla ümumi istifadə olunan NV üçün nəzərdə tutulmuş 5.9, 5.10.1-5.10.3 nişanları ilə işarələnmiş zolağa digər NV-nin daxil etməsi.",
+    "bal": "2 bal",
+    "cerime": "₼100.00",
+    "inzibati_həbs": "",
+    "əlavə": ""
+  },
+  {
+    "madde": "327",
+    "alt_madde": "327.1.2",
+    "ad": "Velosiped və kiçik elektrikli NV-lər istisna olmaqla digər NV-nin nəzərdə tutulmayan yolda hərəkət etməsi.",
+    "bal": "2 bal",
+    "cerime": "₼100.00",
+    "inzibati_həbs": "",
+    "əlavə": ""
+  },
+  {
+    "madde": "327",
+    "alt_madde": "327.3",
+    "ad": "Dəmiryolu keçidlərində qaydaların pozulması və ya NV-nin dəmir yolu dəmiryolu keçidindən kanar keçməsi.",
+    "bal": "4 bal",
+    "cerime": "₼100.00",
+    "inzibati_həbs": "",
+    "əlavə": ""
+  },
+  {
+    "madde": "327",
+    "alt_madde": "327.5",
+    "ad": "Avtomagistrallarda və 5.3 nişanı ilə işarələnmiş yollarda texniki sürəti 50 km/saat-dan az olan NV ilə hərəkət etmək.",
+    "bal": "4 bal",
+    "cerime": "₼100.00",
+    "inzibati_həbs": "",
+    "əlavə": ""
+  },
+  {
+    "madde": "327",
+    "alt_madde": "328.8",
+    "ad": "Bu Məcəllənin 327.1-327.6, 328 və 330-cu maddələrində göstərilən qaydaları pozması nəticəsində zərər çəkmiş şəxsin sağlamlığına yüngül zədə vurulmasına görə",
+    "bal": "5 bal",
+    "cerime": "₼300.00",
+    "inzibati_həbs": "",
+    "əlavə": "və ya NV-ni idarəetmə hüququ 1 il müddətinə məhdudlaşdırılır"
+  }
+]

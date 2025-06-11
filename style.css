@@ -1,0 +1,40 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+th,
+td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: left;
+}
+.merged-madde {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #f0f0f0;
+}
+#table-point {
+  cursor: pointer;
+  background-color: #ddd;
+  user-select: none;
+}
+#hidden-bal-row td {
+  background-color: #ffeeba;
+  font-weight: bold;
+  text-align: center;
+}
+
+#table-penalty {
+  cursor: pointer;
+  background-color: #bbd;
+  user-select: none;
+}
+
+/* bal hücreleri için gizleme sınıfı */
+.hidden {
+  visibility: hidden;
+  user-select: none;
+}
